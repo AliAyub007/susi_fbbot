@@ -12,7 +12,10 @@ spec:
     spec:
       containers:
       - name: susi-fbbot
-        image: fossasia/susi_fbbot:latest
+        image: aliayubkhan/susi_fbbot:latest
+        env:
+        - name: FB_PAGE_ACCESS_TOKEN
+          value: "EAADZC9eGDQqMBAK9WCfFwcGOSSh895O1LKDxy8wmu4kwAZBZB7wVinAEPTT8Vv0wC1flOIed0cZBxzyJdeEqwAAjaeiPXnX9Qe05mzJlfzyyyJMHzbn7okvHxj3gW01aL6PbAuAL8Wn1C0x4cDKh3hP36B13wbGBr6XKBQ28iM2ZAx27fipz8"
         ports:
         - containerPort: 8080
           protocol: TCP
