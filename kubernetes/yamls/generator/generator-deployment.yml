@@ -1,0 +1,22 @@
+kind: Deployment
+apiVersion: apps/v1beta1
+metadata:
+  name: susi-fbbot
+  namespace: fbbot
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: susi-fbbot
+    spec:
+      containers:
+      - name: susi-fbbot
+        image: fossasia/susi_fbbot:latest
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        envFrom:
+        - configMapRef:
+            name: susi-fbbot
+      restartPolicy: Always
