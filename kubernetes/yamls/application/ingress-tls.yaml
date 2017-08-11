@@ -9,10 +9,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - ssusi-fbbot.tk
-    secretName: facebook-tls
+    - susi-facebook.tk
+    secretName: fbbot-tls
   rules:
-  - host: susi-fbbot.tk
+  - host: susi-facebook.tk
     http:
       paths:
       - path: /
