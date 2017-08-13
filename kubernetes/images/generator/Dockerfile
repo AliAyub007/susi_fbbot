@@ -5,8 +5,8 @@ ARG BRANCH
 ARG REPOSITORY
 
 ENV COMMIT_HASH ${COMMIT_HASH:-null}
-ENV BRANCH ${BRANCH:-development1}
-ENV REPOSITORY ${REPOSITORY:-https://github.com/AliAyub007/susi_fbbot.git}
+ENV BRANCH ${BRANCH:-development}
+ENV REPOSITORY ${REPOSITORY:-https://github.com/fossasia/susi_fbbot.git}
 ENV INSTALL_PATH /facebook
 
 RUN mkdir -p $INSTALL_PATH
