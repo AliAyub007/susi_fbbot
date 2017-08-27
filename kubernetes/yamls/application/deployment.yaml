@@ -16,6 +16,6 @@ spec:
         imagePullPolicy: Always
         env: 
         - name: FB_PAGE_ACCESS_TOKEN
-          value: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+          value: "EAADZC9eGDQqMBABHjWZBtAhY2ZCXwdzQmtAiaZCRZA8JGMZApbeaZC7gSX7VkJFwPLe6JF6kheLy6VhBlGA30vM8Q7rYYFTc0cPZBq871URQu68JJyR657XIMWMXeV1CmB2XZCkDGsm8eqxdJySQJ0RBP28i9OVAMiQg2j7R6aBrRx0hf5EPsGv6o"
         ports:
         - containerPort: 8080
